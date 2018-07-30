@@ -1,12 +1,4 @@
 /* Venux CSS - layout */
-/* reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/* fin de Reset*/
-
 
 /* Configuración de Columnas */
 .col {

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* Venux CSS */
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* fin de Reset*/
+/**
+*   Venux Layout
+*/
+/* Configuración de filas */
+.row {
+  width: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Configuración de Columnas */
+.col-transversal-content, .col-main-content, .col-big-3, .col-big-2, .col-big, .col-large, .col-medium, .col-small-2, .col-small {
+  float: left;
+}
+
+.col-small {
+  width: 25%;
+}
+
+.col-small-2 {
+  width: 30%;
+}
+
+.col-medium {
+  width: 50%;
+}
+
+.col-large {
+  width: 100%;
+}
+
+.col-big {
+  width: 75%;
+}
+
+.col-big-2 {
+  width: 80%;
+}
+
+.col-big-3 {
+  width: 90%;
+}
+
+.col-main-content {
+  width: 70%;
+}
+
+.col-transversal-content {
+  width: 30%;
+}
+
+/* Configuración Padding & Margin */
+.fill-normal {
+  padding: 1% 2% 3% 2%;
+}
+
+.markup-normal {
+  margin: 1% 4.1% 1% 4.1%;
+}
+
+/**
+*  basic styles of border
+*/
+.proportion {
+  border: 1px solid black;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.clipping {
+  border: 5px dotted #bbb;
+  border-radius: 15px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.alert {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+
+.success {
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+}
+
+.informative {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+.warning {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+}
+
+/*# sourceMappingURL=venux.css.map */

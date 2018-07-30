@@ -1,0 +1,72 @@
+/**
+*   Venux Layout
+*/
+
+/* Configuración de filas */
+.row {
+    width: 100%;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Configuración de Columnas */
+%col {
+    float: left;
+}
+
+.col-small {
+    @extend %col;
+    width: 25%;
+}
+
+.col-small-2 {
+    @extend %col;
+    width: 30%;
+}
+
+.col-medium {
+    @extend %col;
+    width: 50%;
+}
+
+.col-large {
+    @extend %col;
+    width: 100%;
+}
+
+.col-big {
+    @extend %col;
+    width: 75%;
+}
+
+.col-big-2 {
+    @extend %col;
+    width: 80%;
+}
+
+.col-big-3 {
+    @extend %col;
+    width: 90%;
+}
+
+.col-main-content {
+    @extend %col;
+    width: 70%;
+}
+
+.col-transversal-content {
+    @extend %col;
+    width: 30%;
+}
+
+/* Configuración Padding & Margin */
+.fill-normal {
+    padding: 1% 2% 3% 2%;
+}
+
+.markup-normal {
+    margin: 1% 4.1% 1% 4.1%;
+}
