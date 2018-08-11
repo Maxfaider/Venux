@@ -4,29 +4,59 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
             maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../dist/venux.min.css">
+        <link rel="stylesheet" href="../dist/venux.css">
         <title>Test Venux</title>
     </head>
     <body>
+        <!-- Custom Style -->
+        <style>
+            .container {
+                border: 2px solid red;
+            }
 
-        <div class="row">
-            <div class="col-small markup-normal clipping">1</div>
-            <div class="col-small markup-normal card">2</div>
-            <div class="col-small markup-normal clipping">3</div>
-            <div class="col-small markup-normal card">4</div>
-            <div class="col-small markup-normal clipping">5</div>
+            .rejilla {
+                border: 1px solid black;
+            }
+            /*simulation of content */
+            .text {
+                height: 20%;
+            }
+        </style>
+
+        <!-- example 1
+        <div class="row rejilla">
+            <div class="item-small rejilla">1</div>
+            <div class="item-small rejilla">2</div>
+            <div class="item-small rejilla">3</div>
+            <div class="item-small rejilla">4</div>
         </div>
-
-        <div class="row">
-            <div class="col-small markup-normal success">1</div>
-            <div class="col-small markup-normal alert">2</div>
-            <div class="col-small markup-normal warning">3</div>
-            <div class="col-small markup-normal informative">4</div>
+-->
+        <!-- example 2 -->
+        <div class="container fill-normal">
+            <div class="row">
+                <div class="rejilla item">1a</div>
+                <div class="rejilla item">2a</div>
+                <div class="rejilla item">3a</div>
+                <div class="rejilla item">4a</div>
+                <div class="rejilla item">5a</div>
+                <div class="rejilla item">6a</div>
+                <div class="rejilla item">7a</div>
+                <div class="rejilla item">8a</div>
+                <div class="rejilla item">9a</div>
+                <div class="rejilla item">10a</div>
+            </div>
+            <div class="column">
+                <div class="rejilla text">1b</div>
+                <div class="rejilla text">2b</div>
+                <div class="rejilla text">3b</div>
+                <div class="rejilla text">4b</div>
+                <div class="rejilla text">5b</div>
+                <div class="rejilla text">6b</div>
+                <div class="rejilla text">7b</div>
+                <div class="rejilla text">8b</div>
+                <div class="rejilla text">9b</div>
+                <div class="rejilla text">10b</div>
+            </div>
         </div>
-
-        <section class="row">
-            <div class="col-main-content fill-normal proportion">1</div>
-            <div class="col-transversal-content fill-normal proportion">2</div>
-        </section>
     </body>
 </html>

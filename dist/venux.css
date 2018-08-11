@@ -11,57 +11,49 @@
 /**
 *   Venux Layout
 */
-/* Configuración de filas */
+/* Configuration row and column */
+.row, .column, .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.column {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .row {
-  width: 100%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  flex-grow: 1;
 }
 
-/* Configuración de Columnas */
-.col-transversal-content, .col-main-content, .col-big-3, .col-big-2, .col-big, .col-large, .col-medium, .col-small-2, .col-small {
-  float: left;
+/* END configuration row and column */
+/* Configuration items */
+.item {
+  width: 20%;
 }
 
-.col-small {
+.item-small {
   width: 25%;
 }
 
-.col-small-2 {
+.item-medium {
   width: 30%;
 }
 
-.col-medium {
-  width: 50%;
-}
-
-.col-large {
-  width: 100%;
-}
-
-.col-big {
-  width: 75%;
-}
-
-.col-big-2 {
-  width: 80%;
-}
-
-.col-big-3 {
-  width: 90%;
-}
-
-.col-main-content {
+.main-content {
   width: 70%;
 }
 
-.col-transversal-content {
+.transversal-content {
   width: 30%;
 }
 
+/*END Configuration items */
 /* Configuración Padding & Margin */
 .fill-normal {
   padding: 1% 2% 3% 2%;
@@ -71,13 +63,10 @@
   margin: 1% 4.1% 1% 4.1%;
 }
 
+/* END Configuration Padding & Margin */
 /**
 *  basic styles of border
 */
-.proportion {
-  border: 1px solid black;
-}
-
 .card {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

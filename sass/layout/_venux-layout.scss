@@ -2,65 +2,51 @@
 *   Venux Layout
 */
 
-/* Configuración de filas */
+/* Configuration row and column */
+%flex-properties {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    @extend %flex-properties;
+    width: 100vw;
+    height: 100vh;
+}
+
+.column {
+    @extend %flex-properties;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .row {
-    width: 100%;
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    @extend %flex-properties;
+    flex-grow: 1;
+}
+/* END configuration row and column */
+
+/* Configuration items */
+.item {
+    width: 20%;
 }
 
-/* Configuración de Columnas */
-%col {
-    float: left;
-}
-
-.col-small {
-    @extend %col;
+.item-small {
     width: 25%;
 }
 
-.col-small-2 {
-    @extend %col;
+.item-medium {
     width: 30%;
 }
 
-.col-medium {
-    @extend %col;
-    width: 50%;
-}
-
-.col-large {
-    @extend %col;
-    width: 100%;
-}
-
-.col-big {
-    @extend %col;
-    width: 75%;
-}
-
-.col-big-2 {
-    @extend %col;
-    width: 80%;
-}
-
-.col-big-3 {
-    @extend %col;
-    width: 90%;
-}
-
-.col-main-content {
-    @extend %col;
+.main-content {
     width: 70%;
 }
 
-.col-transversal-content {
-    @extend %col;
+.transversal-content {
     width: 30%;
 }
+/*END Configuration items */
 
 /* Configuración Padding & Margin */
 .fill-normal {
@@ -70,3 +56,4 @@
 .markup-normal {
     margin: 1% 4.1% 1% 4.1%;
 }
+/* END Configuration Padding & Margin */
