@@ -1,0 +1,28 @@
+{
+  "name": "venux",
+  "version": "1.0.0",
+  "description": "Framework to structure the content of the web, for learning purposes.",
+  "main": "dist/venux.min.css",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxfaider/Venux.git"
+  },
+  "keywords": [
+    "venux",
+    "css",
+    "layout"
+  ],
+  "author": "Alan M.E",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maxfaider/Venux/issues"
+  },
+  "homepage": "https://github.com/Maxfaider/Venux#readme"
+}
